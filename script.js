@@ -1,5 +1,5 @@
 const popupReg = document.querySelector('.popup-reg');
-const headerRegBtn = document.querySelector('.header__register');
+const headerRegBtn = document.querySelector('.header__register-button');
 const popupRegContainer = document.querySelector('.popup-reg__container');
 
 headerRegBtn.addEventListener('click', () => {
