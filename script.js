@@ -46,3 +46,60 @@ popupLogin.addEventListener("click", function (e) {
       console.log('2');
   }
 });
+
+const allSportsBtn = document.querySelector('.translations__sport-chose-btn_type_all');
+const footbalSportBtn = document.querySelector('.translations__sport-chose-btn_type_football');
+const hockeySportBtn = document.querySelector('.translations__sport-chose-btn_type_hockey');
+allSportsBtn.addEventListener('click', () => {
+  allSportsBtn.classList.add('translations__sport-choose_active');
+  footbalSportBtn.classList.remove('translations__sport-choose_active');
+  hockeySportBtn.classList.remove('translations__sport-choose_active');
+});
+footbalSportBtn.addEventListener('click', () => {
+  footbalSportBtn.classList.add('translations__sport-choose_active');
+  allSportsBtn.classList.remove('translations__sport-choose_active');
+  hockeySportBtn.classList.remove('translations__sport-choose_active');
+});
+hockeySportBtn.addEventListener('click', () => {
+  hockeySportBtn.classList.add('translations__sport-choose_active');
+  footbalSportBtn.classList.remove('translations__sport-choose_active');
+  allSportsBtn.classList.remove('translations__sport-choose_active');
+});
+
+const todayChooseBtn = document.querySelector('.translations__date-choose-btn_type_today');
+const yesterdayChooseBtn = document.querySelector('.translations__date-choose-btn_type_yesterday');
+const tomorrowChooseBtn = document.querySelector('.translations__date-choose-btn_type_tomorrow');
+todayChooseBtn.addEventListener('click', () => {
+  todayChooseBtn.classList.add('translations__date-choose_active');
+  yesterdayChooseBtn.classList.remove('translations__date-choose_active');
+  tomorrowChooseBtn.classList.remove('translations__date-choose_active');
+});
+yesterdayChooseBtn.addEventListener('click', () => {
+  yesterdayChooseBtn.classList.add('translations__date-choose_active');
+  todayChooseBtn.classList.remove('translations__date-choose_active');
+  tomorrowChooseBtn.classList.remove('translations__date-choose_active');
+});
+tomorrowChooseBtn.addEventListener('click', () => {
+  tomorrowChooseBtn.classList.add('translations__date-choose_active');
+  yesterdayChooseBtn.classList.remove('translations__date-choose_active');
+  todayChooseBtn.classList.remove('translations__date-choose_active');
+});
+
+const newsSportAll = document.querySelector('.news__sport-chose-btn_type_all');
+const newsSportFootbal = document.querySelector('.news__sport-chose-btn_type_footbal');
+const newsSportHockey = document.querySelector('.news__sport-chose-btn_type_hockey');
+newsSportAll.addEventListener('click', () => {
+  newsSportAll.classList.add('translations__sport-choose_active');
+  newsSportFootbal.classList.remove('translations__sport-choose_active');
+  newsSportHockey.classList.remove('translations__sport-choose_active');
+});
+newsSportFootbal.addEventListener('click', () => {
+  newsSportFootbal.classList.add('translations__sport-choose_active');
+  newsSportAll.classList.remove('translations__sport-choose_active');
+  newsSportHockey.classList.remove('translations__sport-choose_active');
+});
+newsSportHockey.addEventListener('click', () => {
+  newsSportHockey.classList.add('translations__sport-choose_active');
+  newsSportFootbal.classList.remove('translations__sport-choose_active');
+  newsSportAll.classList.remove('translations__sport-choose_active');
+});

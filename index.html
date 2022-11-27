@@ -26,8 +26,8 @@
     <div class="header__right-items">
       <img src="./images/user_icon.svg" alt="Иконка" class="header__user-icon">
       <button class="header__register-button">Регистрация</button>
-      <div class="header__register">
-        <input type="text" class="header__register-input">
+      <div class="header__search-n-mg-glass">
+        <input type="text" class="header__search">
         <img src="./images/magnifying_glass.svg" alt="Лупа" class="header__mag-glass">
       </div>
 
@@ -104,26 +104,26 @@
     <section class="translations-container">
       <div class="translations">
         <h2 class="translations__title">Трансляции</h2>
-        <div class="translations__date-choose">
+        <form class="translations__date-choose" method="post" action="">
           <button
             class="translations__date-choose-btn_type_yesterday btn-no-style translations__date-choose-font-style">Вчера</button>
           <button
-            class="translations__date-choose-btn_type_today btn-no-style translations__date-choose-font-style">Сегодня</button>
+            class="translations__date-choose-btn_type_today btn-no-style translations__date-choose-font-style translations__date-choose_active">Сегодня</button>
           <button
             class="translations__date-choose-btn_type_tomorrow btn-no-style translations__date-choose-font-style">Завтра</button>
           <button class="translations__date-choose-btn_type_calendar btn-no-style translations__date-choose-font-style">
             <img src="./images/calendar.svg" alt="Иконка календаря" class="translations__calendar-icon">
             Выбрать
           </button>
-        </div>
-        <div class="translations__sport-choose">
+        </form>
+        <form class="translations__sport-choose" method="post" action="">
           <button class="translations__sport-chose-btn_type_all btn-no-style translations__sport-choose-btn-font-style">
             Все</button>
           <button
-            class="translations__sport-chose-btn_type_football btn-no-style translations__sport-choose-btn-font-style">Футбол</button>
+            class="translations__sport-chose-btn_type_football btn-no-style translations__sport-choose-btn-font-style translations__sport-choose_active">Футбол</button>
           <button
             class="translations__sport-chose-btn_type_hockey btn-no-style translations__sport-choose-btn-font-style">Хоккей</button>
-        </div>
+          </form>
         <div class="matches">
           <h2 class="matches__title">Товарищеские матчи 2020-2022</h2>
           <article class="match">
@@ -233,13 +233,13 @@
     </section>
     <section class="news">
       <h2 class="news__title">Новости</h2>
-      <div class="news__sport-choose translations__sport-choose">
-        <button class="news__sport-chose-btn-style btn-no-style">
+      <form class="news__sport-choose translations__sport-choose" method="post" action="">
+        <button class="news__sport-chose-btn-style btn-no-style news__sport-chose-btn_type_all">
           Все</button>
         <button
-          class="news__sport-chose-btn_type_football translations__sport-chose-btn_type_football btn-no-style">Футбол</button>
-        <button class="news__sport-chose-btn-style btn-no-style">Хоккей</button>
-      </div>
+          class="news__sport-chose-btn_type_footbal btn-no-style translations__sport-choose_active news__sport-chose-btn-style">Футбол</button>
+        <button class="news__sport-chose-btn-style btn-no-style news__sport-chose-btn_type_hockey">Хоккей</button>
+        </form>
       <article class="news__grid1">
         <div class="news__large-post">
           <img src="./images/image 4.png" alt="img" class="news__large-img">
