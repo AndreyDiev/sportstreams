@@ -526,7 +526,7 @@
 }
 
 .news__large-post-title {
-  margin-top: -100px;
+  margin-top: -90px;
   width: 100%;
   height: 88px;
   background: rgba(0, 0, 0, 0.7);
@@ -589,10 +589,131 @@
   grid-auto-flow: row;
   gap: 30px 8px;
   margin-bottom: 70px;
+  align-content: center;
 }
 
 .translations__sport-choose_active {
   border-top: 2px solid #1A6F43;
   color: #1A6F43;
   font-weight: 800;
+}
+
+.post {
+  max-width: 1042px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.post__btns {
+  width: 25px;
+  height: 25px;
+}
+
+.post__title {
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+  margin: 0 0 20px 0;
+}
+
+.post__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.post__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px 0 20px 0;
+}
+
+.post__info div {
+  align-self: center;
+}
+
+.post__like {
+  margin-right: 21px;
+}
+
+.post__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 190.4%;
+  white-space: pre-line;
+  margin: 0 0 25px 0;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.post__comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.post__textarea {
+  width: calc(100% - 40px);
+  resize: none;
+  padding: 0;
+  margin-bottom: 10px;
+  outline: 0;
+  outline-offset: 0;
+  padding: 20px;
+}
+
+.post__comment-btn {
+  width: 245px;
+  height: 43px;
+  background: linear-gradient(180deg, #207649 0%, #0F6337 100%);
+  box-shadow: 0px 4px 25px rgba(22, 107, 62, 0.3);
+  align-self: end;
+  color: #fff;
+}
+
+@media (max-width: 1520px) {
+  .top-streams {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .top-streams {
+    max-width: 340px;
+  }
+
+  .news__grid1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 515px;
+    margin: 0 auto;
+  }
+
+  .news__grid2 {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news__large-post {
+    max-width: 513px;
+    height: 234px;
+  }
+
+  .news__large-img {
+    max-width: 513px;
+  }
+
+  .news__medium-post1 {
+    margin-top: 120px;
+  }
+
+  .news__title {
+    text-align: center;
+  }
+
+  .news__sport-choose {
+    text-align: center;
+  }
 }
