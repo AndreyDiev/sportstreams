@@ -103,3 +103,13 @@ newsSportHockey.addEventListener('click', () => {
   newsSportFootbal.classList.remove('translations__sport-choose_active');
   newsSportAll.classList.remove('translations__sport-choose_active');
 });
+
+
+const searchingForm = document.querySelector('.searching-form');
+const poiskInput = document.querySelector('.poisk__input');
+searchingForm.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  window.open('./search.html');
+  poiskInput.value = searchingForm.value;
+});
+

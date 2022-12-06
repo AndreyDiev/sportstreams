@@ -16,19 +16,21 @@
     </a>
 
     <hav class="header__navigation">
-      <a href="./aboutus.html" class="header__navigation-element">О нас</a>
       <a href="./news.html" class="header__navigation-element">Новости</a>
       <a href="./translationslist.html" class="header__navigation-element">Трансляции</a>
       <a href="./subscription.html" class="header__navigation-element">Подписки</a>
       <a href="./contacts.html" class="header__navigation-element">Контакты</a>
+      <a href="./aboutus.html" class="header__navigation-element">О нас</a>
     </hav>
 
     <div class="header__right-items">
-      <img src="./images/user_icon.svg" alt="Иконка" class="header__user-icon">
+      <a href="./settings.html"><img src="./images/user_icon.svg" alt="Иконка" class="header__user-icon"></a>
       <button class="header__register-button">Регистрация</button>
       <div class="header__search-n-mg-glass">
-        <input type="text" class="header__search">
-        <img src="./images/magnifying_glass.svg" alt="Лупа" class="header__mag-glass">
+        <form action="" class="searching-form">
+          <input type="text" class="header__search" minlength="1" maxlength="56" required>
+          <button class="btn-no-style searching-button"><img src="./images/magnifying_glass.svg" alt="Лупа" class="header__mag-glass"></button>
+        </form>
       </div>
   </header>
 
