@@ -18,6 +18,8 @@ popupReg.addEventListener("click", function (e) {
   }
 });
 
+
+
 const popupLoginToggleBtn = document.querySelector('.popup-reg__login');
 const popupLogin = document.querySelector('.popup-log');
 const popupLogContainer = document.querySelector('.popup-log__container');
@@ -45,6 +47,15 @@ popupLogin.addEventListener("click", function (e) {
       popupLogin.classList.remove('popup_active');
       console.log('2');
   }
+});
+
+const popupCloseBtn = document.querySelector('.popup__close');
+const popupCloseBtn2 = document.querySelector('.popup__close2');
+popupCloseBtn.addEventListener('click', () => {
+  popupReg.classList.remove('popup_active');
+});
+popupCloseBtn2.addEventListener('click', () => {
+  popupLogin.classList.remove('popup_active');
 });
 
 const allSportsBtn = document.querySelector('.translations__sport-chose-btn_type_all');

@@ -308,6 +308,7 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  text-decoration: none;
 }
 
 .match__time {
@@ -920,7 +921,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
 }
 
@@ -1095,7 +1096,11 @@
   display: flex;
   flex-direction: column;
   max-width: 1068px;
-  margin: 50px 0 75px 50px;
+  margin: 50px auto 75px;
+}
+
+.main-in-search {
+  margin: 0 auto;
 }
 
 .poisk__form {
@@ -1150,16 +1155,77 @@
 }
 
 .news3 {
-  margin: 100px 0 60px 50px;
+  margin: 100px auto 60px auto;
+  max-width: 1068px;
+  padding-right: 390px;
+}
+
+.translation__members-count {
+  margin: 0;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.popup__close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  align-self: end;
+  bottom: 30px;
+  right: 20px;
+}
+
+.translation__members-counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 27px;
+  margin: 10px 0 10px 0;
+}
+
+.translation__members-counter img {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
 }
 
 .translist-search-padding {
-  margin-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 400px;
+}
+
+#trans {
+  padding-right: 538px;
 }
 
 .non-decor {
   text-decoration: none;
 }
+
+.link-trans {
+  height: 22px;
+  margin-bottom: 25px;
+}
+
+.link-trans:last-of-type {
+  margin-bottom: 30px;
+}
+
+.non-decor {
+  color: #000; /* Цвет ссылок */
+ }
+.non-decor:visited {
+  color: #000; /* Цвет посещенных ссылок */
+ }
+ .non-decor:active {
+  color: #000; /* Цвет активных ссылок */
+ }
 
 .bold {
   font-weight: 900;
