@@ -1465,6 +1465,57 @@
   .popup-log__reg-btn {
     max-width: calc(95% + 10px);
   }
+
+  .translist {
+    max-width: 339px;
+  }
+
+  .transelem {
+    max-width: 339px;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .subs {
+    width: 98%;
+  }
+
+  .sub {
+    height: 260px;
+    width: 100%;
+  }
+
+  .subs__1month {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .subs__1month-form {
+    margin-left: -385px;
+  }
+
+  .subs__12month-sale {
+    width: 43px;
+    bottom: 237px;
+    left: 90%;
+    margin-left: 0;
+  }
+
+  .sub:last-of-type {
+    margin-right: 7px;
+  }
+
+  .subs__1month-buy-btn {
+    margin-right: 122px;
+  }
+
+  .subs__12month-buy-btn {
+    margin-left: -167px;
+  }
+
+  .translist-search-padding {
+    padding-right: 0;
+  }
 }
 
 /*@import url(./adaptive.css);*/
