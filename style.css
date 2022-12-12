@@ -1312,6 +1312,11 @@
 
 
 @media screen and (max-width: 500px) {
+
+  body {
+    max-width: 100vw;
+  }
+
   .header {
     display: flex;
     flex-direction: column;
@@ -1359,15 +1364,14 @@
   }
 
   .top-streams {
-    max-width: 95%;
+    max-width: 339px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 10px;
   }
 
   .streams-margin {
     flex-direction: column;
-    max-width: 95%;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1490,12 +1494,8 @@
     justify-content: flex-start;
   }
 
-  .subs__1month-form {
-    margin-left: -385px;
-  }
-
   .subs__12month-sale {
-    width: 43px;
+    width: 35px;
     bottom: 237px;
     left: 90%;
     margin-left: 0;
@@ -1506,16 +1506,19 @@
   }
 
   .subs__1month-buy-btn {
-    margin-right: 122px;
+    margin-right: 100px;
   }
 
   .subs__12month-buy-btn {
-    margin-left: -167px;
+    margin-right: 100px;
   }
 
   .translist-search-padding {
     padding-right: 0;
   }
+
+  .margin-top-footer-sub {
+    margin-top: 150px;
+}
 }
 
-/*@import url(./adaptive.css);*/
