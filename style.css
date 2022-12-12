@@ -1486,7 +1486,7 @@
 
   .sub {
     height: 260px;
-    width: 100%;
+    max-width: 346px;
   }
 
   .subs__1month {
@@ -1495,10 +1495,12 @@
   }
 
   .subs__12month-sale {
-    width: 35px;
+    width: 26px;
     bottom: 237px;
-    left: 90%;
+    left: 93%;
     margin-left: 0;
+    padding-top: 4px;
+    font-size: 10px;
   }
 
   .sub:last-of-type {
@@ -1506,11 +1508,11 @@
   }
 
   .subs__1month-buy-btn {
-    margin-right: 129px;
+    margin-right: 80px;
   }
 
   .subs__12month-buy-btn {
-    margin-right: 129px;
+    margin-right: 80px;
   }
 
   .translist-search-padding {
@@ -1520,5 +1522,26 @@
   .margin-top-footer-sub {
     margin-top: 150px;
 }
+
+  .poisk {
+    max-width: 95%;
+  }
+
+  #trans {
+    padding-right: 0;
+  }
+
+  .news3 {
+    padding-right: 0;
+    max-width: 340px;
+  }
+
+  .settings {
+    max-width: 320px;
+  }
+
+  .about__text {
+    max-width: 330px;
+  }
 }
 
