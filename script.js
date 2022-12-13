@@ -18,8 +18,6 @@ popupReg.addEventListener("click", function (e) {
   }
 });
 
-
-
 const popupLoginToggleBtn = document.querySelector('.popup-reg__login');
 const popupLogin = document.querySelector('.popup-log');
 const popupLogContainer = document.querySelector('.popup-log__container');
